@@ -1,0 +1,13 @@
+name: Dependency Analysis
+
+on: push 
+
+jobs:
+  dependency-analysis:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Dependency Analysis
+      uses: guilhermemarimzup/dependency-vuln-checker@development
