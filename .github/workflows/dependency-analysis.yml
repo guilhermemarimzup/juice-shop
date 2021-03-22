@@ -1,13 +1,13 @@
-name: Dependency Analysis
+name: Dependency Vuln Checker
 
 on: push 
 
 jobs:
-  dependency-analysis:
+  dependency-vuln-checker:
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
 
     - name: Dependency Analysis
-      uses: guilhermemarimzup/dependency-vuln-checker@development
+      uses: guilhermemarimzup/dependency-vuln-checker@v1
